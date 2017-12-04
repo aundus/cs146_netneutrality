@@ -44,20 +44,117 @@ body {
 	font-family: verdana;
 }
 
-#quiz_section{
+.quiz{
 	background-color: rgba(0,0,0,.9);
 	background-attachment: fixed;
 	width: 1000px;
+	height: 650px;
 	margin-right: auto;
 	margin-left: auto;
 	padding: 12px;
 	color: white;
+	border-radius: 20px;
 }
 #quiz_title{
-	background-color: rgba(0,0,0,.6);
+	background-color: rgba(0,0,0,.9);
 	background-attachment: fixed;
 	color: white;
 	padding: 8px;
+}
+#quiz_start > h1{
+	font-size: 45pt;
+	text-align: center;
+	margin-top: 25px;
+}
+#quiz_section{
+	display: none;
+}
+#quiz_results{
+	display:none;
+	overflow-y: auto;
+}
+#results{
+	margin: 45px;
+	font-size: 18pt;
+}
+
+.red{
+	color: red;
+}
+.green{
+	color: #13dd00;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+	color: #FFF;
+	background-color: #00ea6e;
+  padding: 14px 20px;
+  font-size: 22px;
+  line-height: 1.28;
+  border-radius: 10px;
+	margin: auto;
+	outline: none;
+}
+.bgn {
+  padding: 26px 32px;
+  font-size: 34px;
+  line-height: 1;
+  border-radius: 19px;
+	display: block;
+  margin: 0 auto;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+	color: #FFF;
+	background-color: #00ea6e;
+	margin-bottom: 150px;
+	margin-top: 150px;
+	outline:none;
+}
+#sbmt{
+	display: none;
+	float: right;
+}
+#next{
+	float: right;
+}
+#back{
+	visibility: hidden;
+}
+#tagain{
+	display: block;
+  margin: 0 auto;
+}
+#answer_form{
+	font-size: 36pt;
+}
+.box{
+	padding: 20px;
+	border-radius: 10px;
+	background-color: #00dbdb;
+	width: 30%;
+	height: 130px;
+	margin: auto;
+}
+.box > input{
+	display: none;
+}
+table{
+	margin-top: 30px;
+	margin-bottom: 20px;
+	border-spacing: 15px;
 }
 
 /* Rules for tablet*/
@@ -73,6 +170,13 @@ body {
 	}
 	p{
 		text-align: center;
+	}
+	.btn-sm,
+	.btn-group-sm > .btn {
+	  padding: 5px 10px;
+	  font-size: 12px;
+	  line-height: 1.5;
+	  border-radius: 3px;
 	}
 }
 /*Rules for phones*/
@@ -94,5 +198,12 @@ body {
 	}
 	#netheader{
 		display: inline;
+	}
+	.btn-xs,
+	.btn-group-xs > .btn {
+	  padding: 1px 5px;
+	  font-size: 12px;
+	  line-height: 1.5;
+	  border-radius: 3px;
 	}
 }
