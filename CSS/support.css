@@ -30,10 +30,18 @@ h1{
 	border-width: 1px;
 	border-color: black;
 	display: inline-block;
-	float: right;
 }
-#links img{
-	width: 25%;
+#links button{
+	width: 20%;
+	background-color: #ff6600;
+	padding: 10px;
+	color: #041445;
+	font-weight: bold;
+	font-family: Verdana;
+	margin-left: 10%;
+}
+#links button:hover{
+	background-color: orange;
 }
 body {
 	background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rWTERSESipmu22cf/server-room-led-lights-are-flashing-technology-background_blegolfd-x_thumbnail-full01.png);

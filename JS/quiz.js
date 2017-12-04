@@ -24,41 +24,41 @@ window.onload = function(){
     2 : "a4",
     3 : "a2",
     4 : "a1",
-    5 : "a3"
+    5 : "a4"
   };
   var questions = {
-    1 : "Question 1",
-    2 : "Question 2",
-    3 : "Question 3",
-    4 : "Question 4",
-    5 : "Question 5"
+    1 : "Who is the Chairman of the FCC?",
+    2 : "Which country has repealed its net neutrality laws, and is being sold internet in packages like calbe?",
+    3 : "Which US law currently protects Net Neutrality?",
+    4 : "Which New Jersey Legislator supports Net Neutrality?",
+    5 : "What can I do to preserve freedom on the internet?"
   };
 
   var option = {
-    1 : "Q1Answer 1",
-    2 : "Q1Answer 2",
-    3 : "Q1Answer 3",
-    4 : "Q1Answer 4",
+    1 : "Ajit Pai",
+    2 : "Donald Trump",
+    3 : "John Oliver",
+    4 : "Michael O'Riley",
 
-    5 : "Q2Answer 1",
-    6 : "Q2Answer 2",
-    7 : "Q2Answer 3",
-    8 : "Q2Answer 4",
+    5 : "Spain",
+    6 : "Costa Rica",
+    7 : "Paraguay",
+    8 : "Portugal",
 
-    9 : "Q3Answer 1",
-    10 : "Q3Answer 2",
-    11 : "Q3Answer 3",
-    12 : "Q3Answer 4",
+    9 : "Net Neutrality Act",
+    10 : "Internet Freedom Preservation Act",
+    11 : "Open Internet Act",
+    12 : "Freedom of Infrotmation Act",
 
-    13 : "Q4Answer 1",
-    14 : "Q4Answer 2",
-    15 : "Q4Answer 3",
-    16 : "Q4Answer 4",
+    13 : "Senator Corey Booker",
+    14 : "Representative Leonard Lance",
+    15 : "Senator Bob Menendez",
+    16 : "Representative Albio Sires",
 
-    17 : "Q5Answer 1",
-    18 : "Q5Answer 2",
-    19 : "Q5Answer 3",
-    20 : "Q5Answer 4"
+    17 : "Call legislators fromm your state",
+    18 : "Donate to organizations fighting for Net Neutrality",
+    19 : "Comment on the FCC Website",
+    20 : "All the Above"
   };
 
 
@@ -254,7 +254,7 @@ window.onload = function(){
       for(j=start;j<start+4;j++){
         var li = document.createElement("li");
         li.appendChild(document.createTextNode(option[j]));
-        if(j == 1 || j == 8 || j == 10 || j == 13 || j == 19){
+        if(j == 1 || j == 8 || j == 10 || j == 13 || j == 20){
           li.setAttribute('class', 'green');
         }
         ul.appendChild(li);
