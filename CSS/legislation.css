@@ -1,93 +1,50 @@
-
-
 #header{
-
 	display: inline-table;
-
 	background-color: blue;
-
+	width: 100%;
 }
 
 
 nav{
-
 	background-color: #041445;
-
 	padding: 10px;
-
 	color: white;
 }
 
 nav ul li{
-
 	display: inline;
-
 	padding: 5px;
-
 	background-color: #ff6600;
-
 	color: white;
-
 }
 
 nav ul li:hover{
-
 	background-color: orange;
-
-
 }
 
 nav ul li a {
-
 	text-decoration: none;
-
 }
 
 
-body {
-	
-	background-image: url(https://static.pexels.com/photos/281260/pexels-photo-281260.jpeg);
+body {	
+	background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rWTERSESipmu22cf/server-room-led-lights-are-flashing-technology-background_blegolfd-x_thumbnail-full01.png);
 	color: white;
-		margin: 10px 700px 10px 10px;
+	background-size: 100% , 100%;
 	font-family: verdana;
 
 }
 	
 
 #content{
-
 	background-color: rgba(0,0,0,.6);
-
 	background-attachment: fixed;
-
 	width: 1000px;
-
 	margin-right: auto;
-
 	margin-left: auto;
-
 	color: white;
 }
 
-#urgent{
-
-	background-color: red;
-
-	color:white;
-
-	font-weight: bold;
-
-	text-align: center;
-
-	padding: 3px;
-}
-
-iframe{
-
-	display: block;
-
-	margin: 0 auto;
-}
 
 
 /* Rules for tablet*/
@@ -98,10 +55,7 @@ iframe{
 		margin-top: 10px;
 	}
 	#content{
-		width: 100%;
 		justify-content: center;
-	}
-	#urgent{
 		width: 100%;
 	}
 	p{
