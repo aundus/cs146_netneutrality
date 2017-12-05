@@ -41,7 +41,9 @@ body {
 	margin-left: auto;
 	color: white;
 }
-
+#content a:visited{
+	color:lightblue;
+}
 
 /* Rules for tablet*/
 @media only screen and (max-width: 1000px){

@@ -10,19 +10,10 @@ nav ul li{
 }
 nav ul li a{
 	text-decoration: none;
-
+	color: darkblue;
 }
-
-a:visited {
-  color: blue;
-}
-
-a:hover {
-  color: rebeccapurple;
-}
-
-a:active {
-  color: teal;
+#content a:visited{
+	color: lightblue;
 }
 body{
 	font-family: Verdana;
