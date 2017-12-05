@@ -28,7 +28,7 @@ window.onload = function(){
   };
   var questions = {
     1 : "Who is the Chairman of the FCC?",
-    2 : "Which country has repealed its net neutrality laws, and is being sold internet in packages like calbe?",
+    2 : "Which country has repealed its net neutrality laws, and is being sold internet in packages like cable?",
     3 : "Which US law currently protects Net Neutrality?",
     4 : "Which New Jersey Legislator supports Net Neutrality?",
     5 : "What can I do to preserve freedom on the internet?"
@@ -48,14 +48,14 @@ window.onload = function(){
     9 : "Net Neutrality Act",
     10 : "Internet Freedom Preservation Act",
     11 : "Open Internet Act",
-    12 : "Freedom of Infrotmation Act",
+    12 : "Freedom of Information Act",
 
     13 : "Senator Corey Booker",
     14 : "Representative Leonard Lance",
     15 : "Senator Bob Menendez",
     16 : "Representative Albio Sires",
 
-    17 : "Call legislators fromm your state",
+    17 : "Call legislators from your state",
     18 : "Donate to organizations fighting for Net Neutrality",
     19 : "Comment on the FCC Website",
     20 : "All the Above"
@@ -151,6 +151,10 @@ window.onload = function(){
         nextBtn.style.display = "none";
         document.getElementById("sbmt").style.display = "inline";
         question.innerHTML = questions[5];
+        l1.classList.add("labelsize");
+        l2.classList.add("labelsize");
+        l3.classList.add("labelsize");
+        l4.classList.add("labelsize");
         l1.innerHTML = option[17];
         l2.innerHTML = option[18];
         l3.innerHTML = option[19];
@@ -204,6 +208,10 @@ window.onload = function(){
         nextBtn.style.display = "inline";
         document.getElementById("sbmt").style.display = "none";
         question.innerHTML = questions[4];
+        l1.classList.remove("labelsize");
+        l2.classList.remove("labelsize");
+        l3.classList.remove("labelsize");
+        l4.classList.remove("labelsize");
         l1.innerHTML = option[13];
         l2.innerHTML = option[14];
         l3.innerHTML = option[15];
@@ -249,6 +257,7 @@ window.onload = function(){
       if(!results[i]){
         qheader.setAttribute('class', 'red');
       }
+      qheader.classList.add("questionsize");
       qresults.appendChild(qheader);
       var ul = document.createElement("ul");
       for(j=start;j<start+4;j++){
